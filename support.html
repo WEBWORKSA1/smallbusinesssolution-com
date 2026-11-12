@@ -1,0 +1,39 @@
+---
+title: "Support SmallBusinessSolution.com — Keep the Tools Free | SmallBusinessSolution.com"
+description: "Support free small business tools and guides. Donations fund operations, promotions and marketing, hiring expert contributors, and monthly contest prizes."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/">Home</a> / Support</div><span class="eyebrow">Keep it free for every owner</span><h1>Support the toolkit</h1><p class="lead">Every calculator and guide here is free, with no paywall. Supporters make that possible — and decide what we build next.</p></div></section>
+<section><div class="wrap">
+<h2>Where your support goes</h2>
+<div class="grid g4">
+<div class="card"><span class="ic">⚙️</span><h3>Operations</h3><p>Hosting, domain, security, software and keeping every tool accurate and fast.</p></div>
+<div class="card"><span class="ic">📣</span><h3>Promotions &amp; marketing</h3><p>Reaching more owners who need these tools — especially first-time founders.</p></div>
+<div class="card"><span class="ic">🧑‍💻</span><h3>Hiring talent</h3><p>Paying accountants, lawyers, marketers and writers to create expert content.</p></div>
+<div class="card"><span class="ic">🏆</span><h3>Contests &amp; prizes</h3><p>Funding prizes for the monthly Small Business Spotlight.</p></div>
+</div></div></section>
+<section class="alt"><div class="wrap">
+<h2>Choose a level</h2>
+<div class="grid g4" style="margin-top:26px">
+<div class="card tier"><h3>Coffee</h3><div class="price">$5</div><p>Covers a day of hosting and tools.</p><button class="btn btn-ghost js-tier" data-amt="5" style="margin-top:14px;width:100%">Choose $5</button></div>
+<div class="card tier pop"><span class="badge">Most popular</span><h3>Supporter</h3><div class="price">$25</div><p>Funds a new tool feature. Name on the supporters wall (optional).</p><button class="btn btn-accent js-tier" data-amt="25" style="margin-top:14px;width:100%">Choose $25</button></div>
+<div class="card tier"><h3>Champion</h3><div class="price">$100</div><p>Funds an expert-reviewed guide. Early access to new tools.</p><button class="btn btn-ghost js-tier" data-amt="100" style="margin-top:14px;width:100%">Choose $100</button></div>
+<div class="card tier"><h3>Patron</h3><div class="price">$500+</div><p>Funds a month of contest prizes. Recognition on the contest page.</p><button class="btn btn-ghost js-tier" data-amt="500" style="margin-top:14px;width:100%">Choose $500</button></div>
+</div>
+{% if site.donate_url != "" %}<p style="text-align:center;margin-top:24px"><a class="btn btn-accent btn-lg" href="{{ site.donate_url }}" target="_blank" rel="noopener">Donate now (secure checkout)</a></p>{% endif %}
+</div></section>
+<section id="pledge"><div class="wrap grid g2" style="align-items:start">
+<div class="form-card">
+<form class="js-form" data-subject="SUPPORT PLEDGE" data-ok="Thank you! We'll email you a secure payment link within one business day.">
+<h2>Make your pledge</h2><p class="muted">Tell us your amount and we'll send a secure payment link (card, PayPal or bank transfer). No card details are collected on this site.</p>
+<div class="row"><div class="field"><label for="d-amt">Amount (USD)</label><input id="d-amt" name="amount" type="number" min="1" value="25" required></div><div class="field"><label for="d-freq">Frequency</label><select id="d-freq" name="frequency"><option>One-time</option><option>Monthly</option><option>Yearly</option></select></div></div>
+<div class="field"><label for="d-use">Direct my support to</label><select id="d-use" name="designation"><option>Where it's needed most</option><option>Operations</option><option>Promotions &amp; marketing</option><option>Hiring talent / expert content</option><option>Contests &amp; prizes</option></select></div>
+<div class="row"><div class="field"><label for="d-name">Name</label><input id="d-name" name="name" required autocomplete="name"></div><div class="field"><label for="d-email">Email</label><input id="d-email" name="email" type="email" required autocomplete="email"></div></div>
+<div class="field"><label class="check"><input type="checkbox" name="public_thanks" value="yes"> <span>Thank me publicly on the supporters wall.</span></label></div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn btn-accent btn-lg" type="submit">Send pledge</button><div class="form-msg" role="status"></div>
+</form></div>
+<div>
+<div class="card"><h3>Other ways to help</h3><ul style="padding-left:20px;margin:0"><li>Share a tool with an owner who needs it.</li><li><a href="/careers.html">Contribute</a> a guide or mentor owners.</li><li><a href="/advertise.html">Sponsor</a> a tool, guide or contest.</li><li><a href="/contest.html">Enter</a> or nominate a business for the Spotlight.</li></ul></div>
+<div class="card" style="margin-top:16px"><h3>Transparency</h3><p>Donations support the operation of this website. SmallBusinessSolution.com is not a registered charity, so contributions are not tax-deductible.</p></div>
+</div></div></section>
+<script>document.addEventListener("click",function(e){var b=e.target.closest(".js-tier");if(!b)return;var a=document.getElementById("d-amt");a.value=b.dataset.amt;document.getElementById("pledge").scrollIntoView({behavior:"smooth"});setTimeout(function(){a.focus()},500)});</script>
