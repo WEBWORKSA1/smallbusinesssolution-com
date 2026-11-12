@@ -1,0 +1,26 @@
+---
+title: "Business Loan Calculator: Monthly Payment & Total Interest | SmallBusinessSolution.com"
+description: "Free business loan calculator. Enter amount, interest rate, term and fees to see your monthly payment, total interest, total cost and a yearly amortization schedule."
+tool: true
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools.html">Tools</a> / Loan calculator</div><span class="eyebrow">Funding</span><h1>Business loan calculator</h1><p class="lead">See the real cost of borrowing before you sign: monthly payment, total interest, fees and how fast the balance falls.</p></div></section>
+<section><div class="wrap tool" data-tool="loan">
+  <div class="form-card">
+    <div class="field"><label for="amt">Loan amount ($)</label><input id="amt" type="number" min="0" step="500" value="50000"></div>
+    <div class="row"><div class="field"><label for="rate">Interest rate (% per year)</label><input id="rate" type="number" min="0" step="0.1" value="9.5"></div><div class="field"><label for="term">Term (months)</label><input id="term" type="number" min="1" step="1" value="60"></div></div>
+    <div class="field"><label for="fee">Origination / upfront fee (% of loan)</label><input id="fee" type="number" min="0" step="0.25" value="2"></div>
+    <p class="note">Typical small business term loans run 6–60 months. Fees are often 0–5% of the amount.</p>
+  </div>
+  <div class="result" aria-live="polite"><span class="eyebrow" style="color:var(--gold)">Monthly payment</span><div class="big-num" id="out">—</div><dl id="dl"></dl><a class="btn btn-accent" href="/get-matched.html?need=funding" data-help>Compare real loan offers — free</a></div>
+</div></section>
+<section class="alt"><div class="wrap"><h2>Year-by-year amortization</h2><div class="tbl-wrap"><table><thead><tr><th>Year</th><th>Principal paid</th><th>Interest paid</th><th>Balance left</th></tr></thead><tbody id="amort"></tbody></table></div></div></section>
+<section><div class="wrap narrow prose">
+<h2>How the payment is calculated</h2>
+<p>Most term loans use a standard amortizing formula: <b>Payment = P × r ÷ (1 − (1 + r)<sup>−n</sup>)</b>, where <i>P</i> is the amount borrowed, <i>r</i> is the monthly interest rate (annual rate ÷ 12) and <i>n</i> is the number of monthly payments. Early payments are mostly interest; later payments are mostly principal, which is why the table above shows interest shrinking each year.</p>
+<h3>Look past the monthly payment</h3>
+<p>A longer term lowers the monthly payment but raises total interest. Before choosing, compare total cost of the loan (interest plus fees) across two or three terms. If you can comfortably afford a shorter term, it is almost always cheaper.</p>
+<div class="box"><b>Watch for factor rates.</b> Merchant cash advances and some short-term products quote a "factor rate" (e.g. 1.3) instead of an interest rate. A 1.3 factor repaid over six months can equal an annual percentage rate well above 60%. Convert everything to APR before you compare.</div>
+<h3>What lenders look at</h3>
+<ul><li><b>Time in business</b> — many lenders want 1–2 years of history.</li><li><b>Revenue</b> — monthly deposits on bank statements.</li><li><b>Credit</b> — personal and, increasingly, business credit scores.</li><li><b>Debt service coverage</b> — whether cash flow covers the new payment, usually by 1.25× or more.</li></ul>
+<p>Read our guide to <a href="/guides/small-business-funding-options.html">small business funding options</a> to compare term loans, lines of credit, equipment finance, government-backed loans and grants.</p>
+</div></section>
