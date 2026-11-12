@@ -1,0 +1,33 @@
+---
+title: "Free Invoice Generator — Printable PDF Invoices | SmallBusinessSolution.com"
+description: "Create a professional invoice in two minutes. Add line items, tax and discounts, then print or save as PDF. Free, no sign-up, saved on your device."
+tool: true
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools.html">Tools</a> / Invoice generator</div><span class="eyebrow">Get paid</span><h1>Free invoice generator</h1><p class="lead">Fill it in, then use Print → Save as PDF. Your invoice is saved on this device so you can edit it later.</p></div></section>
+<section><div class="wrap" data-tool="invoice">
+<div class="form-card print-area">
+  <div class="row"><div><h2 style="margin:0">INVOICE</h2><div class="field"><label for="ino">Invoice #</label><input id="ino" data-s value="INV-0001"></div></div>
+  <div class="row"><div class="field"><label for="idate">Date</label><input id="idate" type="date" data-s></div><div class="field"><label for="due">Due</label><input id="due" type="date" data-s></div></div></div>
+  <div class="row"><div class="field"><label for="from">From</label><textarea id="from" data-s placeholder="Your business name&#10;Address&#10;Email / phone">Your Business LLC
+123 Main Street
+City, State</textarea></div><div class="field"><label for="to">Bill to</label><textarea id="to" data-s placeholder="Client name&#10;Address">Client Company
+456 Market Ave
+City, State</textarea></div></div>
+  <div class="tbl-wrap"><table class="inv-table"><thead><tr><th>Description</th><th>Qty</th><th>Rate</th><th style="text-align:right">Amount</th><th class="no-print"></th></tr></thead><tbody id="inv-items"></tbody></table></div>
+  <button type="button" class="btn btn-ghost no-print" id="add-line" style="margin:12px 0">+ Add line</button>
+  <div class="row" style="margin-top:12px">
+    <div><div class="row"><div class="field"><label for="cur">Currency symbol</label><select id="cur" data-s><option>$</option><option>€</option><option>£</option><option>₹</option><option>C$</option><option>A$</option></select></div><div class="field"><label for="tax">Tax (%)</label><input id="tax" type="number" min="0" step="0.01" value="0" data-s></div></div>
+      <div class="field"><label for="disc">Discount (amount)</label><input id="disc" type="number" min="0" step="0.01" value="0" data-s></div>
+      <div class="field"><label for="notes">Notes / payment terms</label><textarea id="notes" data-s>Payment due within 14 days. Thank you for your business!</textarea></div></div>
+    <div><ul class="dl-list"><li><span>Subtotal</span><b id="i-sub"></b></li><li><span>Discount</span><b id="i-disc"></b></li><li><span>Tax</span><b id="i-tax"></b></li><li style="font-size:1.25rem"><span><b>Total due</b></span><b id="i-tot"></b></li></ul></div>
+  </div>
+  <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px"><button type="button" class="btn btn-accent" id="print">Print / Save as PDF</button><button type="button" class="btn btn-ghost" id="clear">Clear invoice</button></div>
+</div>
+</div></section>
+<section class="alt"><div class="wrap narrow prose">
+<h2>What every invoice should include</h2>
+<ul><li>A unique invoice number and the issue date.</li><li>Your business name and contact details, and the client's.</li><li>A clear description, quantity and rate for each item.</li><li>Taxes shown separately, with your tax registration number if required where you operate.</li><li>The due date and accepted payment methods.</li></ul>
+<h3>Get paid faster</h3>
+<p>Invoice the same day the work is delivered, set short terms (7–14 days), offer card or bank-transfer links, and send a friendly reminder the day after the due date. Businesses that follow up consistently collect much faster than those that wait.</p>
+<p>Ready for automatic invoicing and reminders? <a href="/get-matched.html?need=bookkeeping">Get matched with bookkeeping and accounting help</a>.</p>
+</div></section>
