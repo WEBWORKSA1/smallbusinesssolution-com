@@ -1,0 +1,11 @@
+title: "SmallBusinessSolution.com"
+description: "Free calculators, plain-English guides and vetted help for small business owners."
+url: "https://smallbusinesssolution.com"
+baseurl: ""
+plugins: [jekyll-sitemap]
+exclude: [README.md, BUILD-PROMPTS.md, RESEARCH.md, scripts, Gemfile]
+# Optional: paste a Stripe/PayPal/Ko-fi payment link here to show a "Donate now" button on /support.html
+donate_url: ""
+defaults:
+  - scope: {path: ""}
+    values: {layout: default}
